@@ -78,10 +78,16 @@ function editOutput() {
       output.innerHTML = firstValue + symbol + secondValue;
       console.log("newFirstValue:", firstValue);
       console.log("newSecondValue:", secondValue);
-  } else {
-      let arrayOutput = output.innerHTML.split('');
-      arrayOutput.pop();
-      let newString = arrayOutput.join("");
-      output.innerHTML = newString;
+  } else if (symbol){
+      console.log(symbol);
+    
+      let arrayOutput = symbol.split('');
+      // arrayOutput.pop();
+      // arrayOutput.pop();
+      // let newString = arrayOutput.join("");
+      // firstValue = newString;
+      // output.innerHTML = newString ;
+      console.log(arrayOutput);
+      // console.log(firstValue);
   }
 }
