@@ -62,7 +62,7 @@ function clearOutput() {
   output.innerHTML = '';
 }
 
-function editOutput() {
+function deleteValue() {
   if (typeof(firstValue) == 'string') {
     let arrayOutput = output.innerHTML.split(""); 
     arrayOutput.pop(); 
